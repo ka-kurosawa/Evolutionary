@@ -2,7 +2,7 @@
 '''
 Created on 2016/05/28
 
-@author: kurosawakazuma
+@author: ka-kurosawa
 '''
 import random
 import copy
