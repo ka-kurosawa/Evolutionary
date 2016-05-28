@@ -146,6 +146,7 @@ class Sudoku:
             # 解が発見されたら探索終了
             if scores[0][0] == 243:
                 break
+            # 500回ごとに出力してみる
             if i % 500 == 0:
                 print ("count " + str(i) + "  Interim:", scores[0])
 
@@ -154,7 +155,7 @@ class Sudoku:
             for j in empty[1]:
                 line_list[i][j] = scores[0][1][count]
                 count += 1
-        print(scores[0])
+        print("End  Result:", scores[0])
         return line_list
     
     # 突然変異
